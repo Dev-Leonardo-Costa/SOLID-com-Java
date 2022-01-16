@@ -1,32 +1,32 @@
 package br.com.alura.rh.model;
 
-public enum CargoFuncionario {
+public enum Cargo {
     
     SSISTENTE {
         @Override
-        public CargoFuncionario getProximoCargo() {
+        public Cargo getProximoCargo() {
             return ANALISTA;
         }
     },
 	ANALISTA {
         @Override
-        public CargoFuncionario getProximoCargo() {
+        public Cargo getProximoCargo() {
             return ESPECIALISTA;
         }
     },
 	ESPECIALISTA {
         @Override
-        public CargoFuncionario getProximoCargo() {
+        public Cargo getProximoCargo() {
             return GERENTE;
         }
     },
 	GERENTE {
         @Override
-        public CargoFuncionario getProximoCargo() {
+        public Cargo getProximoCargo() {
             return GERENTE;
         }
     };
 
-    public abstract CargoFuncionario getProximoCargo();
+    public abstract Cargo getProximoCargo();
 
 }
