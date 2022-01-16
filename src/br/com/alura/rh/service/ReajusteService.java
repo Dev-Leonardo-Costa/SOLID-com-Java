@@ -7,8 +7,8 @@ import br.com.alura.rh.model.DadosFuncionario;
 
 public class ReajusteService {
 
-    private List<ValidacaoReajuste> validacoes;
-    public ReajusteService(List<ValidacaoReajuste> validacoes) {
+    private List<ValidacaoReajusteService> validacoes;
+    public ReajusteService(List<ValidacaoReajusteService> validacoes) {
         this.validacoes = validacoes;
     }
 
